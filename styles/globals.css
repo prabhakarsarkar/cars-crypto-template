@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.body-container{
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.layout-bg {
+    background-color: #1b1c1f;
+    color: #ffffff;
+}
+.card-bg {
+    background-color: #1e1f25;
+    color: #ffffff;
+}
+.sidebar{
+    width: 250px;
+    height: 100%;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.main-container{
+  width: calc(100% - 250px);
+}
+.body-container{
+  width: 100%;
+  padding: 20px;
+}
+
+.main-container .header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.sidebar.header{
+    height: 80px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.input-field {
+    background: #282c38;
+    border: 1px solid #3c4254;
+    width: 232px;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    height: 40px;
+    color: #ffffff;
+}
+
+.input-icon-cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-icon-cont img {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+}
+.input-icon-cont input {
+    padding-left: 34px;
+}
+
+.yellow-btn {
+    background: rgba(236, 209, 38, 0.14);
+    border-radius: 5px;
+    color: #ecd126;
+    padding: 8px;
+    border: none;
+}
+.header hr.oriantation-vertical {
+    background: #282c38;
+    width: 2px;
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    border-radius: 21px;
+}
+
+.sidebar .logo-cont {
+    height: 80px;
+}
+.luxury-container{
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    width: 100%;
+}
+.card-rounded {
+    border-radius: 20px;
+}
+hr{
+    color: #282c38;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid;
+    margin: 1em 0;
+    padding: 0;
+}
+.card-cont{
+    height: 420px;
+    width: 100%;
+   
+}
+.car-card{
+    min-height: 390px;
+    /* width: 25rem;/ */
+    /* background: #23262F; */
+    border-radius: 20px;
+}
+.car_card_image{
+   width: 100%;
+   height: 154px;
+   z-index: 4;
+
+}
+.car_card_image >img{
+    width: 70%;
+    height: 100%;
+   
+ 
+ }
+.car_card_ractangle{
+    width: 100%;
+    min-height: 21rem;
+    background: #23262F;
+
+}
+.yt-btn{
+    background-color: #ecd126;
+}
+
+.sidebarBottom{
+    width: 250px;
+}
+
+.sideBar_account_box{
+  width: 100%;
+  height: 70px;
+}

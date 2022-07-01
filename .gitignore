@@ -1,0 +1,7 @@
+build
+node_modules
+test
+yarn-error.log
+.next
+.swc
+.next/*
