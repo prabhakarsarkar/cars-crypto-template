@@ -13,7 +13,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
                 <Sidebar />
-            <main className="main-container" >
+            <main id="main-container" className="main-container minimise" >
                 <Header />
                 <LuxuryRental />
             </main>

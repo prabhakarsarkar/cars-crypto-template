@@ -37,12 +37,57 @@ a {
     border-radius: 20px;
     margin: 20px 0;
 }
+#sidebar-container.minimise .sidebar{
+    width: 70px;
+}
+#sidebar-container.minimise .sidebar ul li .side-nav-text{
+    display: none;
+}
+#sidebar-container.minimise .logo-txt{
+    display: none;
+}
+#sidebar-container.minimise .sidebar.header{
+    display: flex;
+    align-items: center;
+}
+#sidebar-container.minimise .sidebarBottom {
+    width: 70px;
+}
+#sidebar-container.minimise .sidebarBottom .sideBar_account_box .sidebar-bottom-title,
+#sidebar-container.minimise .sidebarBottom .sideBar_account_box .more-icon {
+    display: none;
+} 
+#sidebar-container.minimise .sidebarBottom .bottom-account{
+    display: none;
+}
+#main-container.minimise {
+    width: calc(100% - 70px);
+}
+.sidebar-container {
+    margin-top: 20px;
+    margin-left: 20px;
+}
 .main-container{
   width: calc(100% - 250px);
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 100%;
+  overflow: auto;
+  /* padding-left: 20px; */
 }
 .body-container{
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
+}
+.sidebar-container{
+    transition: 0.3s all;
+    width: 350px;
+}
+
+.sidebar-container.minimise {
+    width: 70px;
+    transition: 0.5s all;
+    margin-right: 20px;
 }
 
 .main-container .header {
@@ -59,6 +104,10 @@ a {
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
+}
+.sidebar.header img{
+    margin-left: auto;
+    margin-right: auto;
 }
 .input-field {
     background: #282c38;
